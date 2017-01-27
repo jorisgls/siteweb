@@ -1,0 +1,44 @@
+ErrorDocument 404 /error.php
+Options +FollowSymlinks
+Options -Indexes
+<Files .htaccess>
+deny from all
+</Files>
+<Files ~ "\.log$">
+Order allow,deny
+Deny from all
+</Files>
+<ifModule mod_php5.c>
+php_value zlib.output_compression 16386
+php_value register_globals off
+php_value session.use_trans_sid 0
+</ifModule>
+<ifModule mod_rewrite.c>
+RewriteEngine on
+# Uncomment the line below if the site doesn't work and you have mod_rewrite installed.
+# RewriteBase /
+RewriteRule ^logout([^/]+) account/logout.php
+RewriteRule ^community/socialmedia([^/]+) socialmedia.php
+RewriteRule ^community/staffs([^/]+) staffs.php
+RewriteRule ^articles/([^/]+) articles.php?id=$1
+RewriteRule ^registration([^/]+) index.php?p=register
+RewriteRule ^lire-news/([^/]+) lire-news.php?id=$1
+RewriteRule ^boutique-badges/badge/([^/]+) boutique-badges.php?id=$1
+
+RewriteRule ^admin/site/boutique([^/]+) admin/boutique.php
+RewriteRule ^admin/staffs/([^/]+) admin/staffs.php?id=$1
+RewriteRule ^admin/bans/([^/]+) admin/bans.php?value=$1
+RewriteRule ^admin/delete_new/([^/]+) admin/delete_new.php?id=$1
+RewriteRule ^admin/new/post([^/]+) admin/new.php?post=true
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(([A-Za-z0-9\-_]+/)*[A-Za-z0-9\-_]+)?$ $1.php
+</ifModule>
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !/maintenance.php$ 
+RewriteCond %{REMOTE_HOST} !^88\.183\.194\.189
+
+RewriteRule $ /maintenance.php [R=302,L]

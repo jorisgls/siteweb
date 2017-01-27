@@ -1,0 +1,1 @@
+<?php $update = mt_rand(500, 999); ?>

@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; }
+body {  font-family: Verdana, Arial, Times New Roman;  font-size: 70%; }
+h1 { margin: 5px 3% 2px 12px; font-size: 180%;width:200px;background:#99AAFF;line-height:0.8em;}
+img{ padding-left:5px;}
+#closer{float:right;text-align:right;line-height:15px;}
+
+.flash{ background:#FFFF33; width:93%; width:100%; }
+
+.focus{ border:thin; background:#CFCFCF;width:100%;  }
+
+#temoin{ position:absolute;bottom:0px;right:0px;border:solid;height:60px;width: 200px;background-color:#cccccc; }
+
+#mychat{ border:solid 8px #99AAFF; width:380px; height:390px; float:left; background:#ffffff; list-style-type:none; overflow: auto; }
+	#mychat li{ margin: 3px 0px 0px 12px; font-size: 110%; list-style-type:none; display:block;}
+
+#userz{ border:solid 8px #99AAFF; background:#ffffff; width:170px; height:390px; float:right; overflow: auto; display:block; }
+	#userz li{ font-size:120%; list-style-type:none;  }
+	#userz li span{ margin:5px 0px 0px 12px; }
+	#userz li img{ position:absolute; right:15px; }
+	
+#container {  position:absolute; top:0px; right:0px;  width:600px;  height:500px;}
+
+#content {  border:solid #99AAFF; background: #99AAFF; }
+#imgz{ border-left:solid 8px #99AAFF; width:400px; margin-left:15px;}
+
+#message { border:solid 8px #99AAFF;  width: 370px; padding:4px 4px 4px 4px;}
+#envoyer { border:solid 2px 2px 2px 8px #99AAFF;}
+
+/*----------------------------------------effets coins arrondis*/
+.rtop, .rbottom{display:block; }
+.rtop *, .rbottom *{display: block; height: 1px; overflow: hidden}
+.r1{margin: 0 5px; background:#99AAFF;}
+.r2{margin: 0 3px; background:#99AAFF;}
+.r3{margin: 0 2px; background:#99AAFF;}
+.r4{margin: 0 1px; height: 2px; background:#99AAFF;}

@@ -1,0 +1,368 @@
+/*
+	------------ BobbacCMS 1.0 -------------
+	| Nom de l'auteur: Taoufik & Sebastien |
+	| Type: CSS3;                          |
+	| Date: 28/07/2013;                    |
+	---------------------------------------	
+*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+body {
+	background: #00A0BB url('http://localhost/app/tpl/skins/Habbo/images/bg_m.jpg') repeat-x;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0px; /* RESET CSS */
+	padding: 0px; /* RESET CSS */
+	color: white;
+}
+#logo {
+	position: absolute;
+	width: 131px;
+	height: 42px;
+	background-image: url('http://localhost/app/tpl/skins/Habbo/images/logo.png');
+	top: 12px;
+}
+.center_c {
+	width: 1000px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.center {
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+}
+.clear {
+	clear:both;
+}
+.hidden {
+	display:none;
+}
+#header {
+	background-color: rgba(0, 0, 0, 0.82);
+	padding: 5px;
+	height: 60px;
+}
+.arrow_box {
+	position: absolute;
+	background: rgb(21, 38, 49);
+	border: 4px solid white;
+	padding: 40px;
+	z-index: 1;
+	width: 420px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+	-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.3));
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.3));
+	top: 150px;
+	height: 100px;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: rgb(21, 38, 49);
+	border-width: 30px;
+	left: 20%;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: white;
+	border-width: 36px;
+	left: 20%;
+	margin-left: -36px;
+}
+.arrow_box .inscription, .link {
+	color: white;
+	text-decoration: none;
+}
+input[type="text"], input[type="password"] {
+	border: 2px solid #cfcfcf;
+	padding: 2px 2px 3px 2px;
+	font-size: 13px;
+	width: 160px;
+	font-family: 'Ubuntu', sans-serif;
+}
+input[type=text]:focus, input[type=password]:focus {
+	background:#fbfdc8;
+}
+#img {
+	background: url('http://localhost/app/tpl/skins/Habbo/images/bg_hotel.out.png') no-repeat;
+	margin: auto;
+	width: 800px;
+	position: fixed;
+	z-index: 0;
+	height: 760px;
+	right: 0;
+	top: 0;
+	float: right;
+}
+#login-column-1 {
+	position: absolute;
+	top: 28px;
+	width: 197px;
+	height: 70px;
+}
+#login-column-2 {
+	position: absolute;
+	left: 280px;
+	top: 28px;
+	width: 150px;
+	height: 70px;
+}
+.sub-label, .rpxnow {
+	font-size: 12px;
+	font-weight: bold;
+	color: #6898bd;
+}
+#button {
+	display: block;
+border-radius: 3px;
+-moz-border-radius: 3px;
+box-shadow: inset 0px 20px #94D84B;
+-webkit-border-radius: 3px;
+padding: 10px;
+font-size: 15px;
+color: white;
+margin-top: 77px;
+background: #5F9D36;
+font-weight: bold;
+text-align: center;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+width: 420px;
+cursor: pointer;
+border: 3px solid transparent;
+transition: 0.3s all;
+}
+#button:hover {
+	box-shadow: inset 0px 20px #AFE972;
+	background: #7BC04E;
+}
+#copyright {
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px;
+	z-index: 2;
+	color: rgb(106, 150, 189);
+	font-size: 13px;
+	font-style: italic;
+	height: 40px;
+	bottom: 0;
+	border-top: 1px solid #7aa3b9;
+	background: rgba(16,16,22,0.85);
+	position: fixed;
+	text-align: center;
+}
+.inscription {
+	padding: 4px;
+	margin-top: 5px;
+	position: absolute;
+	/*left: 180px;*/
+	z-index: 1;
+	top: 350px;
+	width: 495px;
+	text-align: center;
+	height: 100px;
+	background-color: #c78800;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #5f4416;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+	line-height: 54px;
+	text-transform: uppercase;
+}
+.inscription b {
+	left: 4px;
+	top: 4px;
+	right: 4px;
+	display: block;
+	background-color: #f0bb00;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+.inscription:hover{
+	background-color:#d99b00;
+}
+.box_register {
+	position: absolute;
+	background: rgb(21, 38, 49);
+	border: 4px solid white;
+	padding: 2px 40px 20px 30px;
+	z-index: 1;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+	-webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.3));
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.3));
+	top: 150px;
+	margin-left: 550px;
+}
+.box_register:after, .box_register:before {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.box_register:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: rgb(21, 38, 49);
+	border-width: 30px;
+	top: 65%;
+	margin-top: -30px;
+}
+.box_register:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #FFF;
+	border-width: 36px;
+	top: 65%;
+	margin-top: -36px;
+}
+.box_register input {
+	width: 300px;
+	margin-bottom: 8px;
+	height: 25px;
+	border-radius: 2px;
+	padding-left: 10px;
+	display: block;
+}
+.arrow_box input[type="text"], input[type="password"] {
+	margin-bottom: 8px;
+	height: 25px;
+	border-radius: 2px;
+	padding-left: 10px;
+}
+.box_register .inscription{
+	margin-top: 10px;
+	width: auto;
+	position: static;
+	height:38px;
+	line-height: normal;
+}
+.box_register .inscription b{
+	height: 20px;
+	text-transform: none;
+	font-size: 22px;
+	line-height: 40px;
+}
+.box_register h2 {
+	background-color: #365F75;
+	padding: 2px;
+	height: 32px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+#error_message {
+	padding: 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	position: absolute;
+	top: 12px;
+	margin-left: 150px;
+	min-width: 500px;
+	font-weight: bold;
+	text-align: center;
+	background-size: 40px 40px;
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,transparent 75%, transparent);										
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+	animation: animate-bg 5s linear infinite;
+	background-color: #de4343;
+}
+@keyframes animate-bg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+#people-inside{
+	display:block;
+	float:right;
+	height:65px;
+	position:absolute;
+	overflow:hidden;
+	white-space:nowrap;
+	z-index:100;
+	top: 150px;
+	right: 140px;
+}
+#people-inside b{float:left;padding:5px 10px 4px 16px;font-size:12px;height:56px;min-width:45px;max-width:145px;margin-right:8px;background:transparent url(images/users_online_bubble.png) no-repeat -8px 0;color:#000;font-weight:normal;text-align:center;display:inline}
+#people-inside i{
+	position:absolute;
+	right:0;
+	top:0;
+	width:8px;
+	height:65px;
+	background:transparent url(http://localhost/app/tpl/skins/Habbo/images/users_online_bubble.png) no-repeat 0 0;
+}
+#people-inside span{display:block}#people-inside .stats-fig{font-size:18px;font-weight:bold}
+.box_register span{
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	line-height: 25px;
+	padding: 3px;
+	color: #FFF;
+	text-align: center;
+	background: rgb(27, 70, 90);
+	top: 22px;
+	margin-left: -50px;
+	font-size: 14px;
+}
+ 
+.box_register span:after{
+	content: " ";
+	background: url('images/gender.png') no-repeat -5px 3px;
+}
+ 
+.box_register input[type="radio"]{
+	position: absolute;
+	margin: 0;
+	width: 120px;
+	height: 35px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+   	cursor: pointer;
+   	top: 22px;
+}
+.box_register input[type="radio"] + span{ 
+	visibility: hidden; 
+	
+}
+ 
+.box_register input[type="radio"] + span:after{
+	content: " ";
+	background: url('../images/gender.png') no-repeat -5px 3px;
+}
+.box_register input[type="radio"]:checked + span{
+	visibility: visible;
+}
+.box_register li {
+	display: inline-block;
+	margin-left: 100px;
+	cursor: pointer;
+}
+label {
+	font-size: 8px;
+}
