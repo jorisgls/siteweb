@@ -124,9 +124,9 @@ function(){
             </div>
             <?php } ?>
 <form method="post">
-<input type="text" class="input-text" name="titre" value="<?php print $titre; ?>" placeholder="Ton pseudo sur HabboAlpha" />
-<input type="text" class="input-text" name="desc" value="<?php print $desc; ?>" placeholder="Ton pseudo skype" />
-<input type="text" class="input-text" name="image" value="<?php print $image; ?>" placeholder="Le poste pour lequel tu posutles" />
+<input type="text" class="input-text" name="titre" value="" placeholder="Ton pseudo sur HabboAlpha" />
+<input type="text" class="input-text" name="desc" value="" placeholder="Ton pseudo skype" />
+<input type="text" class="input-text" name="image" value="" placeholder="Le poste pour lequel tu posutles" />
 <script src="ckeditor/ckeditor.js"></script>
   <script src="ckeditor/samples/js/sample.js"></script>
 <textarea name="article" id="editor" style="width: 100%; height: 150px;"><?php print $article; ?></textarea>

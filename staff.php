@@ -41,11 +41,9 @@ $pageid = "staff";
 
 
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title"><center><b>RESPONSABLES & COMMUNITY MANAGER</b></center></h3>
-  </div>
-  <div class="panel-body">
+<div class="panel panel-warning" style="width: 100%;position: relative;float: right; border-color:#058ce1;">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600; background-color:#058ce1; border-color:#058ce1"><span class="glyphicon glyphicon-user" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>MANAGERS & RESPONSABLES</center></div>
+
 
 
 
@@ -75,13 +73,12 @@ $pageid = "staff";
 
  </div>
 </div>
+</div>
 
+<div class="panel panel-warning" style="width: 100%;position: relative;float: right; border-color:#058ce1;">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600; background-color:#058ce1; border-color:#058ce1"><span class="glyphicon glyphicon-paperclip" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>JOURNALISTES & CORRECTEURS</center></div>
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title"><center><b>JOURNALISTE & CORRECTEUR</b></center></h3>
-  </div>
-  <div class="panel-body">
+ <div class="panel-body">
 
 
 
@@ -109,13 +106,13 @@ $pageid = "staff";
 </center> </div> 
 <?php } ?>
 
- </div>
+ 
+</div>
 </div>
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title"><center><b>HELPEURS SUPPORT</b></center></h3>
-  </div>
+<div class="panel panel-warning" style="width: 100%;position: relative;float: right; border-color:#058ce1;">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600; background-color:#058ce1; border-color:#058ce1"><span class="glyphicon glyphicon-comment" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>HELPEURS SUPPORT</center></div>
+
   <div class="panel-body">
 
 
@@ -146,16 +143,20 @@ $pageid = "staff";
 
  </div>
 </div>
-
+</div>
 
  </xss> </div></div></div></div>
 <div style="clear:both;"></div></div></div>
-<br>
+
 
 
 </body>
 </html>
 
-
+<style>
+.colorB{
+	background-color : blue;
+}
+</style>
     
  

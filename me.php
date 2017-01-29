@@ -20,13 +20,6 @@ $pageid = "accueil";
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
-
-
-
-
-
-
-
 <link href="../bootstrap.min.css" rel="stylesheet">
 <link href="../bootstrap.css" rel="stylesheet">
 <link rel="shortcut icon" href="<?php echo URL; ?>/web/images/favicon.ico" type="image/vnd.microsoft.icon">
@@ -73,8 +66,8 @@ $tab = mysql_fetch_array($result);
 
 
 
-<div class="panel panel-warning" style="width: 100%;position: relative;float: right;">
-<div class="panel-heading" style="font-size: 17px;font-weight: 600;"><span class="glyphicon glyphicon-calendar" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>ACTUS</center></div>
+<div class="panel panel-warning" style="width: 100%;position: relative;float: right; border-color:#058ce1;">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600; background-color:#058ce1; border-color:#058ce1"><span class="glyphicon glyphicon-calendar" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>ACTUS</center></div>
 </br>
 
 <?php
@@ -90,13 +83,13 @@ while ( $row = mysql_fetch_array($result)){
 }
 echo '</table>';
 ?>
-</br>
+
 </div>
 
 
 
 <div class="panel panel-warning" style="width: 46%;position: relative;float: right;">
-<div class="panel-heading" style="font-size: 17px;font-weight: 600;"><span class="glyphicon glyphicon-comment" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>TWITTER</center></div>
+<div class="panel-heading" style="font-size: 17px;font-weight: 600;"><span class="glyphicon glyphicon-comment" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85; margin-bottom:26px"></span> <center>TWITTER</center></div>
 <div class="list-group">
  <a class="twitter-timeline" height="250" data-dnt="true" href="https://twitter.com/AlphaNewsOFF" >Tweets by AlphaNewsOFF</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
  
@@ -110,13 +103,15 @@ echo '</table>';
 
 
 
-
+<div class="panel panel-warning" style="width: 53%;position: relative;float: right; margin-right:9px;">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600;"><span class="glyphicon glyphicon-pushpin" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> <center>POTINS ET BLABLA</center></div>
+<div class="list-group">
 
 
 
 
 <?php $news = $bdd->query("SELECT * FROM annonce ORDER BY id DESC LIMIT 1"); while($a = $news->fetch()) { ?>
-<div class="jumbotron" style="float:left;padding: 0px;background-image: url(<?php echo $a['topstory_image']; ?>);background-position-y: -7px;background-position-x: -169px;height: 233px;color: white;width: 50%;overflow: hidden;">
+<div class="jumbotron" style="float:left;padding: 0px;background-image: url(<?php echo $a['topstory_image']; ?>);background-position-y: -7px;background-position-x: -169px;height: 233px;color: white;width: 97%;overflow: hidden; margin-left:7px; margin-top:8px;">
 <div style=" background-color: rgba(0, 0, 0, 0.28);position: relative;top: 0;padding-top: 2px;padding-left: 20px;padding-bottom: 8px;width: 100%;right: 0;filter: dropshadow(color=#000,offx=1,offy=1);border-top-right-radius: 5px;border-top-left-radius: 5px;">
 <h3 style="color: white;"><?php echo $a['title']; ?></h3>
 </div>
@@ -125,6 +120,8 @@ echo '</table>';
 <?php echo $a['snippet']; ?></div>
 </div>
 <?php } ?>
+</div>
+</div>
 
 <div style="clear:both;"></div>
 

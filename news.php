@@ -37,7 +37,7 @@ $pageid = "news";
 <div class="container" style="width: 950px;">
 <div style="clear:both;"></div>
 <div class="after_banner">
-<div class="panel panel-primary" style="width: 24%;position: relative;float: left;">
+<div class="panel panel-primary" style="width: 22%;position: relative;float: left;">
 <div class="panel-heading">Nouveautes</div>
 <div class="panel-body"><b>Dernièrement</b>
 </div>
@@ -47,7 +47,7 @@ $pageid = "news";
 </div><br> 
 <?php } ?>
 </div>
-<div class="panel panel-info" style="width: 74%;position: relative;float: right;">
+<div class="panel panel-info" style="width: 74%;position: relative;float: right; margin-top:0px;">
 <?php 
 if(empty($n)) {
 $eSQL = $bdd->query("SELECT * FROM retrophp_news ORDER BY id DESC LIMIT 1");

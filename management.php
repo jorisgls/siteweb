@@ -17,6 +17,11 @@ $pageid = "management";
 
 <link href="../bootstrap.min.css" rel="stylesheet">
 <link href="../bootstrap.css" rel="stylesheet">
+<script type="text/javascript" src="bootstrap.js"></script>
+
+
+
+
 <link rel="shortcut icon" href="<?php echo URL; ?>/web/images/favicon.ico" type="image/vnd.microsoft.icon">
 <link href="<?php echo URL; ?>/web/styles/style.css" rel="stylesheet" type="text/css">
 <link href="https://bootswatch.com/lumen/bootstrap.css" rel="stylesheet" type="text/css">
@@ -96,4 +101,94 @@ MODIFIER MON MOT DE PASSE</a>
 
 </body>
 </html>
+
+
+<div id="image">
+<a href="#"><img src="/1.png" alt="1.png" id="imageTool1" /></a>
+<a href="/admin"><img src="/2.png" alt="2.png" id="imageTool2" /></a>
+<a href="/settings"><img src="/3.png" alt="3.png" id="imageTool3" /></a>
+<a href="/"><img src="/4.png" alt="4.png" id="imageTool4" /></a>
+<img src="/5.png" alt="5.png" id="imageTool5" data-toggle="modal" data-target="#exampleModal" />
+<a href="/account/logout"><img src="/6.png" alt="6.png" id="imageTool6" /></a>
+<a href="#"><img src="/7.png" alt="7.png" id="imageTool7" /></a>
+</div>
+
+ <style>
+#imageTool1{
+position : absolute;
+top : 220px;
+left : 274px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool2{
+position : absolute;
+top : 255px;
+left : px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool3{
+position : absolute;
+top : 280px;
+left : px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool4{
+position : absolute;
+top : 305px;
+left : px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool5{
+position : absolute;
+top : 330px;
+left : px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool6{
+position : absolute;
+top : 355px;
+left : px;
+bottom : 40px;
+right : 1500px;
+}
+
+#imageTool7{
+position : absolute;
+top : 380px;
+left : 277px;
+bottom : 40px;
+right : 1500px;
+}
+</style>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 

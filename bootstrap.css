@@ -5470,6 +5470,7 @@ button.list-group-item-danger.active:focus {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;

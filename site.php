@@ -51,8 +51,8 @@ En savoir <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
 </div>
 <?php } ?>
 
-<div class="panel panel-warning" style="width: 46%;position: relative;float: right;">
-<div class="panel-heading" style="font-size: 17px;font-weight: 600;"><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> INTERVIEWS</div>
+<div class="panel panel-warning" style="width: 46%;position: relative;float: right; border-color:#058ce1">
+<div class="panel-heading" style="font-size: 17px;font-weight: 600; border-color:#058ce1; background-color:#058ce1"><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="float:right;font-size:25px;opacity:0.85;"></span> INTERVIEWS</div>
 
 </br>
 <center><p><b>[INTERVIEW]</b> Olpha, gérante mais pas que ...</p></center>

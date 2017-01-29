@@ -32,12 +32,12 @@ $pageid = "recrutements";
 
 <?php include_once './templates/header.php'; ?>
 
-<div class="container" style="width: 950px;">
+<div class="container" style="width: 950px; background-color:white">
 </br>
 <div style="clear:both;"></div>
 <div class="after_banner" style="top:-14px;position:relative;">
 
-
+</br>
 <div class="alert alert-dismissible alert-info">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>[OPEN]</strong> Les recrutements sont ouverts, si tu souhaites rejoindre notre équipe c'est ici !

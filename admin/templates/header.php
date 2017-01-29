@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="<?php print URL; ?>/admin/css/jquery-jvectormap-1.2.2.css?<?php print UPDATE; ?>"/>
 	<link href="<?php print URL; ?>/admin/css/style.css?<?php print UPDATE; ?>" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+<link href="../bootstrap.min.css" rel="stylesheet">
+<link href="../bootstrap.css" rel="stylesheet">
 </head>
 <body>
 
