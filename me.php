@@ -15,19 +15,11 @@ $pageid = "accueil";
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-<script src="/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/sweetalert.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-<link href="../bootstrap.min.css" rel="stylesheet">
-<link href="../bootstrap.css" rel="stylesheet">
 <link rel="shortcut icon" href="<?php echo URL; ?>/web/images/favicon.ico" type="image/vnd.microsoft.icon">
 <link href="<?php echo URL; ?>/web/styles/style.css" rel="stylesheet" type="text/css">
-<link href="https://bootswatch.com/lumen/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="<?php echo URL; ?>/web/styles/bootstrap-social.css" rel="stylesheet" type="text/css">
 <link href="<?php echo URL; ?>/web/styles/font-awesome.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300normal,300italic,400normal,400italic,600normal,600italic,700normal,700italic,800normal,800italic&amp;subset=all" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
@@ -129,5 +121,6 @@ echo '</table>';
 <?php include_once './templates/footer.php'; ?>
 
 </div>
+	</div>
 </body>
 </html>

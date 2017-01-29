@@ -1,0 +1,1 @@
+UPDATE retrophp_settings SET `Avatarimage` = 'http://www.habbo.fr/habbo-imaging/';

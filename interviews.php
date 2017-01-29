@@ -15,24 +15,6 @@ $pageid = "interviews";
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/bootstrap/min.js"></script>
-
-
-
-
-<script src="/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/sweetalert.css">
-
-
-
-
-
-
-
-
-
-
 
 <link rel="shortcut icon" href="<?php echo URL; ?>/web/images/favicon.ico" type="image/vnd.microsoft.icon">
 <link href="<?php echo URL; ?>/web/styles/style.css" rel="stylesheet" type="text/css">
@@ -51,7 +33,7 @@ $pageid = "interviews";
 <div class="container" style="width: 950px;">
 </br>
 <div style="clear:both;"></div>
-<div class="after_banner" style="top:-14px;position:relative;">
+<div class="after_banner" style="top:-14px;position:relative;"></div>
 
 
 <div class="alert alert-dismissible alert-info">
@@ -72,13 +54,8 @@ $pageid = "interviews";
 </br>
 
 <!--BLOC INTERVIEW A MODIFIER-->
-<center><p>INTERVIEW DE <b>SHIN</b> par Joris : Shin, de la simple modération au grade ultime</p></center>
+<center><h5>INTERVIEW DE <b>SHIN</b> par Joris : Shin, de la simple modération au grade ultime <span style="margin-left:5px;" class="glyphicon glyphicon-plus openModal"></span></h5></center>
 
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,11 +68,7 @@ $pageid = "interviews";
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <iframe width="554" height="480" src="https://www.youtube.com/embed/uEJuoEs1UxY" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -121,4 +94,15 @@ $pageid = "interviews";
 
 </div>
 </body>
+</div>
+
 </html>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.openModal').click(function(){
+      $('#myModal').modal('show');
+    });
+  });
+
+</script>

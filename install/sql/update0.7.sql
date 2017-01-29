@@ -1,0 +1,1 @@
+ALTER TABLE `retrophp_swfs` ADD `Mus` INT(11) NOT NULL DEFAULT '30001' AFTER `Port`;
